@@ -11,6 +11,7 @@ More details at: https://sbstjn.com/deploy-typescript-npm-with-circleci-workflow
 
 ## Features
 
+
 - [TypeScript](tsconfig.json) with [linting](tslint.json)
 - [Unit testing with Jest](test)
 - Coverage reports with [Coveralls](https://coveralls.io)
