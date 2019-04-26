@@ -2,10 +2,10 @@ export default class Library {
   constructor(private foo: string) { }
 
   public getFoo() {
-    return this.foo
+    return this.foo;
   }
 
   public setFoo(foo: string) {
-    this.foo = foo
+    this.foo = foo;
   }
 }
