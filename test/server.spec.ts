@@ -1,7 +1,6 @@
 
 import request from 'supertest';
 import app from '../src/server';
-import Post from '../src/posts/post.interface';
 
 describe('Get', () => {
     it('all posts', (done) => {
