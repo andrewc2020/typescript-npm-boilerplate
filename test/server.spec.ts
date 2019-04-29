@@ -3,11 +3,11 @@ import request from 'supertest';
 import app from '../src/server';
 
 describe('Get', () => {
-    it('fetches Hello World!', (done) => {
-        return request(app)
-        .get('/')
+    it('all posts', (done) => {
+        return request(app.app)
+        .get('/posts')
         .end((err, res: any) => {
-            expect(res.text).toBe('Hello World!');
+            expect(typeof res.body).toBe('object');
             done();
         });
     });

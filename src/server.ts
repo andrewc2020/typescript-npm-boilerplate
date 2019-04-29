@@ -1,14 +1,14 @@
 
-import express from 'express';
+import App from './app';
+import PostsController from './posts/posts.controller';
 
-const app: express.Application = express();
+const app = new App(
+  [
+    new PostsController()
+  ],
+  5000
+);
 
-app.get('/', (request, response) => {
-  response.send('Hello World!');
-});
-
-console.log('listening on port 5000');
-
-app.listen(5000);
+app.listen();
 
 export default app;
