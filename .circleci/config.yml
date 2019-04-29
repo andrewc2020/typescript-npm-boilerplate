@@ -63,7 +63,7 @@ jobs:
 
       - run:
           name: Test TypeScript code
-          command: yarn test:cover
+          command: yarn test:cover --forceExit
 
       - persist_to_workspace:
           root: ~/repo
